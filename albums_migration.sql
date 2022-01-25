@@ -1,4 +1,7 @@
 USE codeup_test_db;
+
+
+
 CREATE TABLE albums (
     id INT UNSIGNED AUTO_INCREMENT,
     artist VARCHAR(200),
@@ -8,3 +11,6 @@ CREATE TABLE albums (
     genre VARCHAR(100),
     PRIMARY KEY (id)
 );
+
+DESCRIBE albums;
+SHOW CREATE TABLE albums;
