@@ -2,12 +2,12 @@ USE codeup_test_db;
 
 -- SELECT id, author_first_name, content FROM quotes;
 -- SELECT * FROM albums WHERE Artist = 'Pink Floyd';
-SELECT Album FROM albums WHERE Artist = 'Pink Floyd';
-SELECT Released FROM albums WHERE Album = 'Sgt. Pepper''s Lonely Hearts Club Band';
-SELECT Genre FROM albums WHERE Album = 'Nevermind';
-SELECT Album FROM albums WHERE Released = 1990;
-SELECT Album FROM albums WHERE Certified_Sales < 20;
-SELECT Album FROM albums WHERE Genre = 'Rock';
+SELECT name FROM albums WHERE artist = 'Pink Floyd';
+SELECT release_date FROM albums WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band';
+SELECT genre FROM albums WHERE name = 'Nevermind';
+SELECT name FROM albums WHERE release_date BETWEEN 1990 AND 1999;
+SELECT name, sales FROM albums WHERE sales < 20;
+SELECT * FROM albums WHERE genre = 'Rock';
 --Selecting a specific genre--
 
 
